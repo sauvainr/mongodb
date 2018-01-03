@@ -24,8 +24,8 @@ defmodule Mongodb.Mixfile do
      env: []]
   end
 
-  def applications(:test), do: [:logger, :connection, :db_connection]
-  def applications(_), do: [:logger, :connection, :db_connection]
+  def applications(:test), do: [:logger, :connection]
+  def applications(_), do: [:logger, :connection]
 
   defp deps do
     [{:connection,    "~> 1.0"},
